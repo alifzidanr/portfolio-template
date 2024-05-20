@@ -4,8 +4,8 @@
   <div class="background-container">
     <img src="@/assets/devlab.jpg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover z-0" />
     <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-      <h1 class="text-lg lg:text-4xl mb-10 font-semibold mt-20 main-heading">Hello, I am-</h1>
-      <h2 class="text-3xl lg:text-7xl mb-14 font-semibold sub-heading">Alif Zidan</h2>
+      <h1 class="text-2xl mb-14 mt-5 sm:mt-20 lg:text-4xl lg:mb-10 lg:mt-20 font-semibold main-heading">Hello, I am-</h1>
+      <h2 class="text-3xl mb-16 leading-none lg:text-7xl lg:mb-14 font-semibold sub-heading">Alif Zidan</h2>
       <div class="container font-semibold lg:text-2xl text-center mobile-text mb-8" id="typewriter">
       </div>
       <button type="button" onclick="window.open('https://drive.google.com/file/d/1YfHb1vyeqyt2TsU3bOlTBoomb3OtOs-3/view?usp=sharing', '_blank')" class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-10 mb-2">Resume</button>

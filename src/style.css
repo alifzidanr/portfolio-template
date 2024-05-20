@@ -199,7 +199,7 @@ nav ul li a.active::after {
   background-color: rgb(255, 255, 255); /* Change the color of the underline */
 }
 
-@media (max-width: 640px) {
+@media (min-width: 360px) and (max-width: 480px) {
   nav ul {
     display: flex; /* Default to flex */
     flex-direction: column;
@@ -295,20 +295,9 @@ padding-left: 235px;
 }
 
 .main-content {
-  margin-top: 460px; 
+  margin-top: 550px; 
 }
 
-.main-heading {
-  font-size: 1.5rem;
-  margin-bottom: 55px;
-  margin-top: 20px; 
-}
-
-.sub-heading {
-  font-size: 3rem;
-  margin-bottom: 65px; 
-  line-height: 1; 
-}
 
 .mobile-text {
   font-size: 1.5rem; 
