@@ -1,0 +1,321 @@
+
+
+.background-container {
+  background-image: url('@/assets/devlab.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 1rem; 
+  right: 1rem; 
+  z-index: 9999; 
+}
+
+
+.main-content {
+  margin-top: 650px; 
+}
+
+.navbar-solid {
+  background-color: rgb(3, 174, 210);
+}
+
+
+body {
+  background: url('@/assets/devlab.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+.logo-container {
+  cursor: pointer;
+}
+
+.container-flex {
+  margin-left: -50px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+
+.logo-container {
+    width: 20%; 
+    margin-right: -25px; 
+    margin-bottom: 7px;
+}
+
+.logo-container img {
+    width: 100%; /* Make the image fill its container */
+}
+
+ .router-link:hover {
+    cursor: pointer;
+  }
+
+  .custom-ul li a:hover {
+    cursor: pointer;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#about.section {
+    padding-top: 30px; 
+  }
+
+#education.section {
+    padding-top: 30px;
+  }
+
+  #experience.section {
+    padding-top: 30px;
+  }
+  #projects.section {
+    padding-top: 30px; 
+  }
+
+  #skills.section {
+    padding-top: 30px; 
+  }
+
+  #contact.section {
+    padding-top: 30px; 
+  }
+
+
+
+
+.text-roboto {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+
+/* Style for navigation bar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* Set to transparent */
+  color: #fdfbfb; /* Change font color to black */
+  z-index: 1000; /* Ensure it's above other content */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Style for navigation links */
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 40px; /* Adjust the spacing between items */
+}
+
+/* Style for navigation links */
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1em; /* Reduce the font size */
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 40px; /* Reduce the line height */
+  position: relative;
+}
+
+@keyframes elongate {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+/* Style for underline on hover */
+nav ul li a:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust the position of the underline */
+  width: 0; /* Initially set width to 0 */
+  height: 1px;
+  background-color: #fafafa;
+  animation: elongate 1.5s forwards; /* Apply keyframe animation */
+}
+
+nav ul li a.active {
+  color: rgb(254, 239, 173); /* Change font color to desired color */
+}
+
+nav ul li a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust the position of the underline */
+  width: 50%;
+  height: 1px; /* Reduce the height of the underline */
+  background-color: #fafafa;
+  transition: width 0.3s ease;
+  animation: elongate 1.5s forwards;
+}
+
+.bg-main-content-bgcolor {
+  background-color: rgb(255, 255, 255); /* Set the main content background color */
+}
+
+/* Style for main content */
+@media (min-width: 641px) {
+  .main-content {
+    padding-top: 64px;
+  }
+
+  .section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px; 
+  }
+}
+
+/* Style for active navigation link */
+nav ul li a.active {
+  color: rgb(254, 239, 173); /* Change font color to desired color */
+}
+
+nav ul li a.active::after {
+  background-color: rgb(255, 255, 255); /* Change the color of the underline */
+}
+
+@media (max-width: 640px) {
+  nav ul {
+    display: flex; /* Default to flex */
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Change background color */
+    padding: 10px 0;
+    padding-left: 50px; /* Add padding from the left */
+    display: none; /* Hide by default */
+    margin-top: 50px;
+  }
+
+  nav ul.active {
+    display: flex; /* Show when active */
+  }
+  nav ul li {
+    margin: 5px 0;
+  }
+  nav ul li a {
+    font-size: 1rem; /* Adjust font size to make it smaller */
+  }
+
+  nav ul li a.active {
+  color: rgb(62, 139, 226); /* Change font color to desired color */
+}
+
+.hidden {
+    display: none;
+  }
+  
+  .nav-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .nav-menu-mobile li a {
+    color: black;
+  }
+
+  .logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 80px;
+}
+
+.logo-image {
+  width: 120px;
+  height: 90px;
+  margin-left: 10x;
+}
+
+.navbar-burger-container {
+  position: relative; /* Make the container relative */
+}
+
+.navbar-burger {
+  background-color: transparent;
+  border: none;
+  position: absolute; /* Position the button absolutely */
+  right: -20; /* Align the button to the right side */
+}
+
+.navbar-burger svg {
+fill: white;
+width: 20px; 
+height: 20px; 
+}
+
+
+.container-flex {
+display: flex;
+justify-content: space-between; 
+align-items: center; 
+}
+
+
+.logo-container img {
+margin-left: 251px;
+width: 85%;
+
+}
+
+
+.router-link {
+padding-left: 235px; 
+}
+
+.main-content {
+  margin-top: 460px; 
+}
+
+.main-heading {
+  font-size: 1.5rem;
+  margin-bottom: 55px;
+  margin-top: 20px; 
+}
+
+.sub-heading {
+  font-size: 3rem;
+  margin-bottom: 65px; 
+  line-height: 1; 
+}
+
+.mobile-text {
+  font-size: 1.5rem; 
+}
+
+
+
+
+}
+
